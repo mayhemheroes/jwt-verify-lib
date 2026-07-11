@@ -1,0 +1,8 @@
+project: jwt-verify-lib
+target: jwt_verify_lib_fuzzer
+cmds:
+  - cmd: /mayhem/jwt_verify_lib_fuzzer
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/jwt_verify_lib_fuzzer/testsuite
